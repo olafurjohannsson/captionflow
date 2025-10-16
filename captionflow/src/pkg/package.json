@@ -1,0 +1,15 @@
+{
+  "name": "captioneditor",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "captioneditor_bg.wasm",
+    "captioneditor.js",
+    "captioneditor.d.ts"
+  ],
+  "main": "captioneditor.js",
+  "types": "captioneditor.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
