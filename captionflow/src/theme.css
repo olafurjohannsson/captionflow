@@ -1,0 +1,110 @@
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.129 0.042 264.695);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.129 0.042 264.695);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.129 0.042 264.695);
+  --primary: oklch(0.208 0.042 265.755);
+  --primary-foreground: oklch(0.984 0.003 247.858);
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417);
+  --accent: oklch(0.968 0.007 247.896);
+  --accent-foreground: oklch(0.208 0.042 265.755);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.929 0.013 255.508);
+  --input: oklch(0.929 0.013 255.508);
+  --ring: oklch(0.704 0.04 256.788);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+
+  --sidebar: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+.dark {
+  --background: oklch(0.07 0.02 250); /* A very dark, almost black, cool gray */
+  --card: oklch(0.11 0.03 250);      /* A slightly lighter card background */
+  --popover: oklch(0.14 0.03 255);    /* Lighter for elements that float above */
+
+  /* FOREGROUNDS / TEXT */
+  --foreground: oklch(0.95 0.01 250);   /* Clean, slightly off-white for body text */
+  --foreground-muted: oklch(0.65 0.02 250); /* Softer gray for secondary info */
+
+  /* PRIMARY (ACTION COLOR) */
+  --primary: oklch(0.62 0.18 290);        /* Vibrant, confident purple */
+  --primary-foreground: oklch(0.98 0.01 290); /* High-contrast light text for primary buttons */
+
+  /* SECONDARY (UI ELEMENTS) */
+  --secondary: oklch(0.18 0.03 250);       /* For secondary buttons or surfaces */
+  --secondary-foreground: oklch(0.95 0.01 250);
+
+  /* ACCENT (HIGHLIGHTS & PLAYHEAD) */
+  --accent: oklch(0.7 0.2 230);           /* A bright, clean blue */
+  --accent-foreground: oklch(0.07 0.02 250); /* Dark text on the bright accent */
+  
+  /* BORDERS & INPUTS */
+  --border: oklch(1 0 0 / 12%);          /* Subtle white border at 12% opacity */
+  --input: oklch(1 0 0 / 8%);             /* Slightly darker inputs */
+  --ring: oklch(0.65 0.18 290 / 60%);     /* Use the primary purple for focus rings */
+
+  /* DESTRUCTIVE */
+  --destructive: oklch(0.6 0.22 20);      /* A clear, but not jarring, red */
+  
+  /* --- App Specific --- */
+  --radius: 0.5rem; /* A slightly sharper radius for a more modern feel */
+}
+
+@theme inline {
+  --font-inter: 'Inter', 'sans-serif';
+  --font-manrope: 'Manrope', 'sans-serif';
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--secondary);
+  --color-muted-foreground: var(--foreground-muted);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}

@@ -1,0 +1,47 @@
+:root {
+    --border: 214.3 31.8% 91.4%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Video player custom styles */
+.video-container {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
+}
+
+/* Timeline styles */
+.timeline-gradient {
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 100%);
+}
+
+/* Waveform canvas */
+.waveform {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}

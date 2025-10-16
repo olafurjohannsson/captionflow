@@ -1,0 +1,26 @@
+<!-- Nucleus / atom icon -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Kjarni nucleus icon">
+    <defs>
+        <style>
+            .orbit { fill: none; stroke:#5b2334; stroke-width:6; stroke-linecap:round; stroke-linejoin:round; }
+            .node { stroke:#5b2334; stroke-width:3; }
+        </style>
+    </defs>
+
+    <!-- Orbits (three elliptical paths rotated like your sample) -->
+    <ellipse class="orbit" cx="120" cy="120" rx="78" ry="30" transform="rotate(0 120 120)"/>
+    <ellipse class="orbit" cx="120" cy="120" rx="78" ry="30" transform="rotate(60 120 120)"/>
+    <ellipse class="orbit" cx="120" cy="120" rx="78" ry="30" transform="rotate(-60 120 120)"/>
+
+    <!-- Orbiting nodes -->
+    <circle class="node" cx="62" cy="118" r="8" fill="#6fc3b8"/>   <!-- teal node (left) -->
+    <circle class="node" cx="192" cy="86"  r="8" fill="#d19b4a"/>   <!-- gold node (upper-right) -->
+    <circle class="node" cx="180" cy="174" r="8" fill="#d19b4a"/>   <!-- gold node (lower-right) -->
+
+    <!-- Central nucleus (glow + core) -->
+    <circle cx="120" cy="120" r="18" fill="#ff8a3c" />
+    <circle cx="120" cy="120" r="9"  fill="#ff4f1a" />
+
+    <!-- subtle inner stroke for cohesion -->
+    <circle cx="120" cy="120" r="18" fill="none" stroke="#5b2334" stroke-width="2" />
+</svg>
